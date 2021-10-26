@@ -1,9 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 body {
   background: #fff;
+  font-family: "Nunito", sans-serif;
 }
 a {
   text-decoration: none;
@@ -14,48 +12,105 @@ ul {
 ul li {
   display: inline-block;
 }
-a:focus {
+a:focus,
+input:focus {
   outline: 0px solid;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 15px;
-  font-weight: 700;
 }
 img {
   max-width: 100%;
   height: auto;
 }
-html,
-body {
-  height: 100%;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
-  box-shadow: 0 0 0px 100px white inset !important;
-}
 .slick-dots li button {
   display: none;
 }
-/* Resoppistive css */
-@media screen and (max-width: 1200px) {
+/* main css */
+header {
+  position: relative;
 }
-
-@media screen and (max-width: 980px) {
+.phone {
+  position: absolute;
+  background: #00b2e2;
+  font-size: 17px;
+  font-weight: 600;
+  top: 15px;
+  right: 13px;
+  padding: 14px 28px;
+  border-radius: 17px 17px 0 0;
+  z-index: -1;
 }
-@media screen and (max-width: 768px) {
+.phone svg {
+  margin-right: 11px;
+  font-size: 22px;
 }
-@media screen and (max-width: 640px) {
+.main-menu {
 }
-
-@media screen and (max-width: 480px) {
+.main-menu .container-fluid,
+.about-us .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-
-@media screen and (max-width: 320px) {
+nav {
+  padding: 62px 0;
+}
+.main-menu ul {
+  background: #16325c;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.main-menu li {
+  padding: 22px 11px;
+  margin-right: -4px;
+}
+.main-menu li a {
+  color: #fff;
+  font-size: 16px;
+}
+.main-menu li a svg {
+  color: #fff;
+}
+.orangered {
+  background: #f04121;
+}
+.dark-pink {
+  background: #ec0d6b;
+}
+.dark-violet {
+  background: #881571;
+}
+.yellow {
+  background: #f89c1d;
+}
+.logo {
+  margin-left: -65%;
+  margin-top: 2%;
+  width: 31%;
+}
+.about-us {
+}
+.about-us h1 {
+  background: #16325c;
+  color: #fff;
+  font-weight: 600;
+  padding: 11px 0;
+  font-size: 37px;
+  text-align: center;
+}
+.about-us h2 {
+  background: #00b2e2;
+  color: #16325c;
+  font-weight: 800;
+  padding: 11px 0;
+  margin-top: -8px;
+  text-align: center;
+}
+.about-us p {
+  background: #dbf5fc;
+  color: #16325c;
+  float: right;
+  margin-top: -8px;
+  padding: 14px 127px;
+  font-size: 19px;
+}
+.new-offers {
 }
