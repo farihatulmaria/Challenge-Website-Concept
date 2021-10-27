@@ -70,16 +70,85 @@ nav {
   color: #fff;
 }
 .orangered {
-  background: #f04121;
+  background: #f04121 !important;
 }
 .dark-pink {
-  background: #ec0d6b;
+  background: #ec0d6b !important;
 }
 .dark-violet {
-  background: #881571;
+  background: #881571 !important;
 }
 .yellow {
-  background: #f89c1d;
+  background: #f89c1d !important;
+}
+.blue {
+  background: #00b2e2 !important;
+}
+.offcanvas-menu {
+  position: fixed;
+  background: #00b2e2;
+  top: 0;
+  left: -300px;
+  width: 21%;
+  height: 100%;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 36px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+}
+.offcanvas-menu.show-menu {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+.offcanvas-shade {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #00b2e2;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+}
+.offcanvas-shade.shade-active {
+  opacity: 0.3;
+  visibility: visible;
+}
+.menu-close svg {
+  font-size: 42px;
+  cursor: pointer;
+  margin-left: 176px;
+}
+.menu-trigger svg {
+  font-size: 26px;
+  cursor: pointer;
+}
+.offcanvas-menu ul {
+  background: transparent !important;
+  overflow: hidden;
+}
+.offcanvas-menu ul li {
+  padding: 16px 0;
+  text-align: center;
+}
+.offcanvas-menu ul li a {
+  color: #fff;
+  font-size: 23px;
+}
+.menu-trigger {
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: none;
 }
 .logo {
   margin-left: -65%;
@@ -107,10 +176,294 @@ nav {
 .about-us p {
   background: #dbf5fc;
   color: #16325c;
+  font-weight: 600;
   float: right;
   margin-top: -8px;
   padding: 14px 127px;
   font-size: 19px;
 }
-.new-offers {
+.new {
+  padding: 80px 0;
+}
+.new-txt {
+  background: #ad80a4;
+  color: #fff;
+  padding: 72px 59px;
+  height: 59vh;
+  position: relative;
+}
+.new-txt::after {
+  position: absolute;
+  bottom: -38px;
+  left: -5px;
+  background: #fff;
+  height: 18%;
+  content: "";
+  width: 99%;
+  transform: rotate(4deg);
+}
+.new-txt p {
+  font-size: 23px;
+}
+.new-btn {
+  background: #881571;
+  color: #fff;
+  font-weight: 800;
+  font-size: 22px;
+  padding: 3px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.new-btn:hover {
+  color: #fff;
+}
+.stones {
+}
+.stones1 {
+}
+.stones2 {
+}
+.stones3 {
+}
+.stones4 {
+}
+
+.dreams,
+.pupose {
+  margin: 50px 0;
+  background: #00b2e2;
+  position: relative;
+  padding: 17px 18px;
+}
+.dreams::before,
+.pupose::before,
+.services::before,
+.question::before {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 100%;
+  height: 124%;
+  background: #dbf5fc;
+  z-index: -1;
+  content: "";
+  transform: skewY(2deg);
+}
+.dreams img {
+  position: absolute;
+  top: -36px;
+  left: 69px;
+  width: 52%;
+}
+.dreams-txt,
+.pupose-txt {
+  color: #fff;
+}
+.dreams-txt h3,
+.pupose-txt h3 {
+  font-weight: 700;
+  font-size: 17px;
+}
+.dreams-txt p,
+.pupose-txt p {
+  margin: 21px 0;
+  font-size: 15px;
+}
+.dream-btn {
+  background: #dbf5fc;
+  color: #16325c;
+}
+.dream-btn:hover {
+  color: #16325c;
+}
+embed {
+  position: absolute;
+  top: -26px;
+  right: 18px;
+  width: 62%;
+  height: 108%;
+}
+.pupose::before {
+  transform: skewY(-2deg);
+}
+.services,
+.question {
+  position: relative;
+  margin: 15% 0;
+}
+.main-service,
+.main-question {
+  padding: 20px 25px;
+  background: #16325c;
+}
+.services img {
+  position: absolute;
+  top: -96px;
+  right: -26px;
+  height: 100%;
+}
+.service-txt,
+.question-txt {
+  background: #fff;
+  color: #16325c;
+  padding: 5px 12px;
+}
+.service-txt p {
+  font-weight: 800;
+  font-size: 20px;
+}
+.service-txt span {
+  font-size: 16px;
+}
+.service-btn {
+  font-weight: 700;
+  color: #55ccec;
+}
+.service-btn:hover {
+  color: #55ccec;
+}
+.service-tags {
+  width: 100%;
+  height: 41px;
+}
+.serivec-txt h1,
+.question-txt h1 {
+  color: #fff;
+  padding: 15px 0;
+  font-weight: 700;
+}
+.serivec-txt h1 span,
+.question-txt h1 span {
+  font-weight: 300;
+}
+.accordion-button {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fff;
+  text-align: center;
+}
+.accordion-button::after {
+  color: #fff;
+  font-weight: 700;
+  background: #00b2e2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.accordion-item:last-of-type,
+.accordion-item:first-of-type {
+  border-bottom-right-radius: 0 !important ;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important ;
+  border-top-right-radius: 0 !important ;
+}
+.accordion-item {
+  margin: 20px 0;
+}
+.accordion-body {
+  background: #e8ebef;
+  font-size: 22px;
+  color: darkblue;
+  font-weight: 600;
+  width: 92%;
+  margin-left: 61px;
+  padding: 27px 41px;
+}
+footer {
+  background: #dbf5fc;
+  padding: 52px 0;
+}
+.main-footer {
+  padding: 20px 0;
+  background: #16325c;
+}
+.main-footer ul {
+  display: inline-block;
+  margin: 0;
+}
+.main-footer ul:nth-child(1) li {
+  margin-left: -40px;
+  padding-right: 53px;
+}
+.main-footer ul li {
+  padding: 7px 12px;
+}
+.main-footer ul li a {
+  color: #fff;
+}
+.contact-links {
+}
+.contact-links p {
+}
+.contact-links p svg {
+}
+.social-links {
+}
+.social-links a {
+  font-size: 37px;
+  margin: 0 4px;
+}
+.social-links a svg {
+  color: #dbf5fc;
+}
+.phone-num {
+  color: #00b2e2;
+  font-size: 23px;
+  font-weight: 800;
+}
+.phone-num svg {
+  margin-right: 5px;
+  font-size: 23px;
+}
+.newsletter {
+}
+.newsletter h4 {
+  color: #00b2e2;
+  font-style: 700;
+}
+.newsletter form {
+  margin: 25px 0;
+}
+.newsletter input {
+  outline: none;
+  border: none;
+  font-size: 19px;
+  margin: 5px 0;
+  padding: 12px 7px;
+  padding-right: 171px;
+}
+.newsletter input[type="submit"] {
+  background: #00b2e2;
+  color: #fff;
+  padding: 5px 25px;
+  font-weight: 700;
+  float: right;
+}
+.newsletter input[type="submit"]:hover {
+  color: #fff;
+}
+.copy-right {
+  position: relative;
+}
+.copy-right-txt {
+  padding: 16px 63px;
+}
+.copy-right-txt img {
+  position: absolute;
+  top: -21px;
+  left: 17%;
+  width: 11%;
+}
+.copy-right-txt p {
+  font-size: 12px;
+  font-weight: 600;
+}
+.copy-right-txt p b {
+}
+.copy-right-txt p b a {
+}
+.footer-end {
+  background: #16325c;
+  width: 100%;
+  height: 71px;
 }

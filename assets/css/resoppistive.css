@@ -4,6 +4,68 @@
 
 @media screen and (max-width: 980px) {
 }
+@media screen and (max-width: 880px) {
+  .menu-trigger {
+    display: block;
+  }
+  .main-menu li {
+    display: none;
+  }
+  .main-menu ul {
+    padding: 35px;
+  }
+  li.search {
+    display: block !important;
+    float: right;
+    margin-top: -11px;
+    margin-right: 0;
+    padding: 0;
+  }
+  .offcanvas-menu ul {
+    display: block;
+  }
+  .offcanvas-menu {
+    width: 41%;
+  }
+  .dreams img {
+    width: 100%;
+    position: initial;
+  }
+  embed {
+    position: initial;
+    width: 100%;
+    margin-top: 49px;
+  }
+  .service-txt span {
+    font-size: 15px;
+  }
+  .services img {
+    position: initial;
+    margin-left: 13%;
+  }
+  .copy-right-txt img {
+    position: absolute;
+    top: 19px;
+    left: 15%;
+    width: 15%;
+  }
+  .new-txt {
+    padding: 72px 59px;
+    height: 44vh;
+  }
+  .dreams::before,
+  .pupose::before,
+  .services::before,
+  .question::before {
+    height: 111%;
+  }
+  .new-txt::after {
+    width: 101%;
+  }
+  footer div {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 640px) {
